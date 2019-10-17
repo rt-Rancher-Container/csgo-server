@@ -21,3 +21,5 @@ WORKDIR /srv/steamcmd
 
 ADD https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz steamcmd_linux.tar.gz
 RUN tar -zxvf steamcmd_linux.tar.gz
+
+RUN ./steamcmd.sh +login anonymous +force_install_dir /srv/csgo +app_update 740 validate +quit
