@@ -19,6 +19,7 @@ RUN mkdir /srv/csgo
 
 WORKDIR /srv
 ADD ./csgo.sh ./csgo.sh
+RUN chmod +x ./csgo.sh
 
 WORKDIR /srv/steamcmd
 
