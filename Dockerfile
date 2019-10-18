@@ -17,6 +17,9 @@ RUN mkdir /srv/steamcmd
 
 RUN mkdir /srv/csgo
 
+WORKDIR /srv
+ADD ./csgo.sh ./csgo.sh
+
 WORKDIR /srv/steamcmd
 
 ADD https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz steamcmd_linux.tar.gz
